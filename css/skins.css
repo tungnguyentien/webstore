@@ -1,0 +1,7 @@
+.active {
+	background-color: #08BBB7 !important;
+	color: white;
+}
+li > a:hover {
+	text-decoration: none;
+};
