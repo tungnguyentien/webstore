@@ -56,7 +56,7 @@ body {
 }
 
 #header_links li:hover i {
-     color: #FFBB33;
+    color: #FFBB33;
 }
 
 #header_links li a:hover {
@@ -215,9 +215,11 @@ body {
     width: 100%;
     height: auto;
 }
+
 #header_logo > .list-logo {
     float: right;
 }
+
 #header_logo > .list-logo > li {
     width: 100px;
     height: 100px;
@@ -226,6 +228,7 @@ body {
     margin: 5px 15px;
     margin-right: 0px;
 }
+
 #header #header_menu {
     width: 100%;
     height: 50px;
@@ -364,6 +367,7 @@ body {
 }
 
 #header_menu li .sub_menu_five > .category {
+    margin: 20px 4%;
     width: 90%;
 }
 
@@ -470,17 +474,15 @@ body {
 
 .content > .slider {
     margin-top: 30px;
-    border: 1px solid;
     height: 300px;
 }
 
 .container > .new-product {
-    height: 400px;
-    border: 1px solid;
+    height: 850px;
     margin: 20px 0px;
 }
 
-.container > .new-product > .title {
+.container  .block-title {
     margin: 0px;
     padding: 15px !important;
     text-transform: uppercase;
@@ -516,19 +518,24 @@ body {
 
 /*Page Login*/
 
-.form-custom .form-register,.form-login {
+.form-custom .form-register,
+.form-login {
     width: 48%;
     margin-top: 20px;
-    height: 400px;;
+    height: 400px;
+    ;
     border: 1px solid rgba(0, 0, 0, 0.2);
 }
+
 .form-custom .form-register {
     margin-right: 1%;
 }
+
 .form-custom .form-login {
     margin-right: 1%;
     float: right;
 }
+
 .form-custom .title {
     border-width: 0 0 1px;
     border-style: solid;
@@ -548,19 +555,20 @@ body {
     margin: 20px 0;
 }
 
-.form-custom  label {
+.form-custom label {
     display: block;
     font-size: 16px;
     margin-top: 10px;
     text-shadow: 1px 1px 1px #887D7D;
 }
 
-.form-custom  input {
+.form-custom input {
     display: block;
     width: 250px;
     height: 30px;
     padding: 5px;
 }
+
 .form-custom .button {
     padding: 10px 25px;
     background-color: #08BBB7;
@@ -572,13 +580,431 @@ body {
     bottom: 20px;
     left: 20px;
 }
+
 .form-custom .button:hover {
     background-color: orange;
 }
+
 .form-custom > .form-login > a {
     font-size: 16px;
     color: #333;
     margin: 10px 0px;
     text-decoration: underline;
     display: block;
+}
+
+
+/*Css Slider*/
+
+.slider #slideshow {
+    position: relative;
+    width: 830px;
+    /* kich thuoc cua slideshow*/
+    height: 300px;
+}
+
+.slider #slideshow > ul {
+    font-size: 0;
+}
+
+.slider #slideshow li img {
+    position: absolute;
+    width: 830px;
+    /* kich thuoc cua image trong slideshow*/
+    height: 300px;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.slider #slideshow .current img {
+    z-index: 5;
+}
+
+.slider #next,
+#prev {
+    position: absolute;
+    top: 130px;
+    z-index: 20;
+    text-indent: -99999px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+.slider #next {
+    right: -15px;
+    width: 40px;
+    height: 40px;
+    background: url('../images/next.png') no-repeat 0 0;
+    background-size: cover !important;
+}
+
+.slider #prev {
+    background-size: cover !important;
+    left: -15px;
+    background: url('../images/prev.png') no-repeat 0 0;
+}
+
+
+/*Css for product*/
+.product-item {
+    display: inline-block;
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 15px;
+    border: 1px solid #eaeaea;
+    width: 262px;
+}
+
+.product-item:hover {
+    box-shadow: 0 0 20px  rgba(140, 127, 127, 0.5);
+    -webkit-box-shadow: 0 0 20px  rgba(140, 127, 127, 0.5);
+    -moz-box-shadow: 0 0 20px  rgba(140, 127, 127, 0.5);
+}
+
+.product-item .container {
+    padding: 5px;
+    width: 100%;
+}
+
+.product-item  .container .item {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.product-item img {
+    width: 230px;
+    height: 230px;
+    z-index: 3;
+    padding: 8px;
+}
+
+.item {
+    text-align: center;
+    float: left;
+    position: relative;
+    text-decoration: underline;
+}
+
+.item,
+.item-hover,
+.item-hover .mask,
+.item-img,
+.item-info {
+    width: 250px;
+    height: 230px;
+}
+
+.item-hover,
+.item-hover .mask,
+.item-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.item-type-zoom .item-hover {
+    z-index: 5;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    opacity: 0;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+
+.headline:hover {
+    color: white;
+}
+
+.item-type-zoom .item-info {
+    z-index: 10;
+    color: #ffffff;
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    z-index: 5;
+    -webkit-transform: scale(0, 0);
+    -moz-transform: scale(0, 0);
+    -ms-transform: scale(0, 0);
+    transform: scale(0, 0);
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+}
+
+.item-type-zoom .item-info .headline {
+    font-size: 18px;
+    width: 75%;
+    margin: 0 auto;
+    border: 4px solid white;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.item-type-zoom .item-info .line {
+    height: 1px;
+    width: 60%;
+    margin: 15px auto 10px auto;
+    background-color: white;
+}
+
+.item-type-zoom .item-info .date {
+    font-size: 14px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.item-type-zoom .item-hover .mask {
+    /*background-color:#9f9d9d;*/
+    background-color: #070101;
+    opacity: 0.5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    z-index: 0;
+}
+
+.item-type-zoom .item-hover:hover {
+    opacity: 1;
+}
+
+.item-type-zoom .item-hover:hover .item-info {
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    transform: scale(1, 1);
+}
+
+.item-img {
+    z-index: 0;
+}
+
+.product-name,
+.product-asus {
+    margin-left: 5px;
+    margin-right: 5px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.product-name p,
+.product-asus p {
+    margin-left: 2px;
+    margin-right: 5px;
+    margin-bottom: 8px;
+}
+
+.product-name p span {
+    margin-left: 162px;
+}
+
+.product-asus p span {
+    margin-left: 130px;
+}
+
+.product-button {
+    margin: 5px;
+}
+
+.product-button > div:hover {
+    cursor: pointer;
+}
+
+.product-button p {
+    color: #FFFFFF;
+}
+
+.product-button i {
+    font-size: 1.5em;
+    margin: 8px;
+}
+
+.product-button .add-to-cart p:hover {
+    background-color: #109ddf;
+    transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+}
+
+.product-button .add-to-wishlist p:hover {
+    background-color: #109ddf;
+    transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+}
+
+.product-button .add-to-compare p:hover {
+    background-color: #109ddf;
+    transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+}
+
+.product-button .add-to-cart {
+    border: 1px solid #eaeaea;
+    width: 150px;
+    height: 38px;
+    float: left;
+}
+
+.product-button .add-to-cart p {
+    position: absolute;
+    margin-top: 1px;
+    margin-left: 1px;
+    width: 148px;
+    height: 36px;
+    line-height: 20px;
+    background-color: #08BBB7;
+    text-indent: 0;
+}
+
+.product-button .add-to-cart p span {
+    position: absolute;
+    margin-top: 8px;
+    margin-left: 1px;
+    text-size: 2;
+}
+
+.product-button .add-to-wishlist {
+    position: absolute;
+    margin-left: 159px;
+    border: 1px solid #eaeaea;
+    width: 40px;
+    height: 38px;
+    float: left;
+}
+
+.product-button .add-to-wishlist p {
+    position: relative;
+    margin-top: 1px;
+    margin-left: 1px;
+    width: 38px;
+    height: 36px;
+    line-height: 15px;
+    /*background-color: #3fcb65;*/
+    background-color: #60ceb5;
+    text-indent: 0;
+    text-transform: uppercase;
+}
+
+.product-button .add-to-compare {
+    margin-left: 208px;
+    border: 1px solid #eaeaea;
+    width: 40px;
+    height: 38px;
+}
+
+.product-button .add-to-compare p {
+    position: relative;
+    margin-top: 1px;
+    margin-left: 1px;
+    width: 38px;
+    height: 36px;
+    line-height: 35px;
+    /*background-color: #c476f0;*/
+    background-color: #d49bf5;
+    text-indent: 0;
+    text-transform: uppercase;
+}
+
+.new {
+    position: relative;
+    margin-left: -10px;
+    margin-top: 10px;
+    z-index: 6;
+    border-radius: 50%;
+    font-weight: 300;
+    height: 50px;
+    line-height: 50px;
+    position: absolute;
+    text-align: center;
+    width: 50px;
+    background: #109ddf;
+    color: #fff;
+    left: 0;
+    top: -30px;
+}
+
+.hot {
+    position: relative;
+    margin-left: -30px;
+    margin-top: -10px;
+    z-index: 6;
+    border-radius: 50%;
+    font-weight: 300;
+    height: 50px;
+    line-height: 50px;
+    position: absolute;
+    text-align: center;
+    width: 50px;
+    color: #fff;
+    left: 0;
+    top: -30px;
+}
+
+.hot img {
+    width: 80px;
+    height: 80px;
+}
+
+.sale-off {
+    position: relative;
+    z-index: 6;
+    height: 50px;
+    line-height: 50px;
+    position: absolute;
+    width: 100px;
+    left: -30px;
+    top: -30px;
+}
+
+.sale-off img {
+    width: 80px;
+    height: auto;
+}
+
+
+.hot-product {
+    height: 500px;
+}
+.container > .banner {
+    text-align: center;
+    margin-top: -40px;
+}
+.container > .banner > img {
+    margin: 20px;
+}
+.hot-product .control-button {
+ width: 100%;
+ text-align: right;
+ margin-top: -20px;
+ padding-right: 40px;
+}
+.hot-product .control-button  span {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    background-color: #3B8E87;
+    display: inline-block;
+    position: relative;
+    margin: 0 2px;
+    cursor: pointer;
+    color: white;
+}
+.hot-product .control-button  span:hover{
+    color: orange;
+}
+.hot-product .control-button > span > i {
+    position: absolute;
+    top: 10px;
+    font-size: 1.5em;
+    left: 15px;
+    color: inherit;
 }
