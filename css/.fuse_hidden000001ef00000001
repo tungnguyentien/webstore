@@ -825,21 +825,21 @@ body {
 }
 
 .product-button .add-to-cart p:hover {
-    background-color: #FFBB33;
+    background-color: #109ddf;
     transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
     -webkit-transition: all 0.3s ease 0s;
 }
 
 .product-button .add-to-wishlist p:hover {
-    background-color: #FFBB33;
+    background-color: #109ddf;
     transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
     -webkit-transition: all 0.3s ease 0s;
 }
 
 .product-button .add-to-compare p:hover {
-    background-color: #FFBB33;
+    background-color: #109ddf;
     transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
     -webkit-transition: all 0.3s ease 0s;
@@ -887,7 +887,7 @@ body {
     height: 36px;
     line-height: 15px;
     /*background-color: #3fcb65;*/
-    background-color:  #08BBB7;
+    background-color: #60ceb5;
     text-indent: 0;
     text-transform: uppercase;
 }
@@ -907,7 +907,7 @@ body {
     height: 36px;
     line-height: 35px;
     /*background-color: #c476f0;*/
-    background-color: #08BBB7;
+    background-color: #d49bf5;
     text-indent: 0;
     text-transform: uppercase;
 }
@@ -924,7 +924,7 @@ body {
     position: absolute;
     text-align: center;
     width: 50px;
-    background: #FFBB33;
+    background: #109ddf;
     color: #fff;
     left: 0;
     top: -30px;
@@ -999,7 +999,7 @@ body {
     color: white;
 }
 .hot-product .control-button  span:hover{
-    color: #FFBB33;
+    color: orange;
 }
 .hot-product .control-button > span > i {
     position: absolute;
@@ -1007,27 +1007,4 @@ body {
     font-size: 1.5em;
     left: 15px;
     color: inherit;
-}
-.single_page > div {
-    margin-bottom: 20px;
-}
-.single_page .image-gallery {
-    height: 400px;
-    border: 1px solid;
-}
-.single_page .information-detail {
-    height: 400px;
-    border: 1px solid;
-}
-.single_page .product-detail {
-    height: 800px;
-    border: 1px solid;
-}
-.single_page .recommend-article{
-    height: 800px;
-    border: 1px solid;
-}
-.single_page .recommend-product {
-    height: 300px;
-    border: 1px solid;
 }

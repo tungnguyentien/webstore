@@ -29,15 +29,15 @@
                                 <ul id="header_links" class="col-md-5  text-right">
                                     <li>
                                         <i class="fa fa-user"></i>
-                                        <a href="single_page.html">Account</a>
+                                        <a href="#">Account</a>
                                     </li>
                                     <li>
                                         <i class="fa fa-heart"></i>
-                                        <a href="single_page.html">My Wishlist</a>
+                                        <a href="#">My Wishlist</a>
                                     </li>
                                     <li>
                                         <i class="fa fa-cart-arrow-down"></i>
-                                        <a href="single_page.html">My Cart</a>
+                                        <a href="#">My Cart</a>
                                     </li>
                                     <li>
                                         <i class="fa fa-facebook-official"></i>
@@ -56,7 +56,7 @@
                                 <div class="field-search">
                                     <input type="text" class="form-control" name="search_query" value="Search..." id="search_query_top">
                                     <button class="btn button-search">
-                                        <i class="fa fa-plus-circle"></i>
+                                        <i class="fa fa-search"></i>
                                     </button>
                                 </div>
                             </div>
@@ -73,7 +73,7 @@
                             </div>
                             <!-- <div class="col-md-3">
                                 <div class="shopping_cart">
-                                    <a href="single_page.html" class="title_cart">
+                                    <a href="#" class="title_cart">
                                         <span><i class="fa fa-cart-arrow-down"></i> (Empty)</span>
                                     </a>
                                     <div class="cart_block">
@@ -89,7 +89,7 @@
                                             </div>
                                         </div>
                                         <div class="cart_buttons">
-                                            <a href="single_page.html">
+                                            <a href="#">
                                           Checkout <i class="fa fa-angle-right"></i>
                                       </a>
                                         </div>
@@ -108,14 +108,14 @@
                                 <nav>
                                     <ul>
                                         <li class="active">
-                                            <a href="single_page.html"><i class="fa fa-home fa-2x"></i></a>
+                                            <a href="#"><i class="fa fa-home fa-2x"></i></a>
                                         </li>
                                         <li>
-                                            <a href="single_page.html">Điện thoại<i class="fa fa-angle-down"></i></a>
+                                            <a href="#">Điện thoại<i class="fa fa-angle-down"></i></a>
                                             <div class="sub_menu sub_menu_one">
                                                 <div class="category">
                                                     <div class="title">
-                                                        <a href="single_page.html">Hãng sản xuất</a>
+                                                        <a href="#">Hãng sản xuất</a>
                                                     </div>
                                                     <div class="category-content">
                                                         <ul>
@@ -130,7 +130,7 @@
                                                 </div>
                                                 <div class="category">
                                                     <div class="title">
-                                                        <a href="single_page.html"></a>
+                                                        <a href="#"></a>
                                                     </div>
                                                     <div class="category-content">
                                                         <ul>
@@ -145,7 +145,7 @@
                                                 </div>
                                                 <div class="category">
                                                     <div class="title">
-                                                        <a href="single_page.html">Giá bán</a>
+                                                        <a href="#">Giá bán</a>
                                                     </div>
                                                     <div class="category-content">
                                                         <ul>
@@ -158,7 +158,7 @@
                                                 </div>
                                                 <div class="category">
                                                     <div class="title">
-                                                        <a href="single_page.html">Hệ điều hành</a>
+                                                        <a href="#">Hệ điều hành</a>
                                                     </div>
                                                     <div class="category-content">
                                                         <ul>
@@ -173,11 +173,11 @@
                                             </div>
                                         </li>
                                         <li>
-                                            <a href="single_page.html">Tablet<i class="fa fa-angle-down"></i></a>
+                                            <a href="#">Tablet<i class="fa fa-angle-down"></i></a>
                                             <div class="sub_menu sub_menu_two">
                                                 <div class="category">
                                                     <div class="title">
-                                                        <a href="single_page.html">Hãng sản xuất</a>
+                                                        <a href="#">Hãng sản xuất</a>
                                                     </div>
                                                     <div class="category-content">
                                                         <ul>
@@ -192,7 +192,7 @@
                                                 </div>
                                                 <div class="category">
                                                     <div class="title">
-                                                        <a href="single_page.html">Giá bán</a>
+                                                        <a href="#">Giá bán</a>
                                                     </div>
                                                     <div class="category-content">
                                                         <ul>
@@ -205,7 +205,7 @@
                                                 </div>
                                                 <div class="category">
                                                     <div class="title">
-                                                        <a href="single_page.html">Hệ điều hành</a>
+                                                        <a href="#">Hệ điều hành</a>
                                                     </div>
                                                     <div class="category-content">
                                                         <ul>
@@ -220,11 +220,11 @@
                                             </div>
                                         </li>
                                         <li>
-                                            <a href="single_page.html">Laptop<i class="fa fa-angle-down"></i></a>
+                                            <a href="#">Laptop<i class="fa fa-angle-down"></i></a>
                                             <div class="sub_menu sub_menu_three">
                                                 <div class="category">
                                                     <div class="title">
-                                                        <a href="single_page.html">Hãng sản xuất</a>
+                                                        <a href="#">Hãng sản xuất</a>
                                                     </div>
                                                     <div class="category-content">
                                                         <ul>
@@ -239,7 +239,7 @@
                                                 </div>
                                                 <div class="category">
                                                     <div class="title">
-                                                        <a href="single_page.html">Giá bán</a>
+                                                        <a href="#">Giá bán</a>
                                                     </div>
                                                     <div class="category-content">
                                                         <ul>
@@ -252,7 +252,7 @@
                                                 </div>
                                                 <div class="category">
                                                     <div class="title">
-                                                        <a href="single_page.html">Hệ điều hành</a>
+                                                        <a href="#">Hệ điều hành</a>
                                                     </div>
                                                     <div class="category-content">
                                                         <ul>
@@ -267,7 +267,7 @@
                                             </div>
                                         </li>
                                         <li>
-                                            <a href="single_page.html">Phụ kiện<i class="fa fa-angle-down"></i></a>
+                                            <a href="#">Phụ kiện<i class="fa fa-angle-down"></i></a>
                                             <div class="sub_menu sub_menu_four">
                                                 <div class="category">
                                                     <div class="category-content">
@@ -286,7 +286,7 @@
                                             </div>
                                         </li>
                                         <li>
-                                            <a href="single_page.html">Chính sách<i class="fa fa-angle-down"></i></a>
+                                            <a href="#">Chính sách<i class="fa fa-angle-down"></i></a>
                                             <div class="sub_menu sub_menu_five">
                                                 <div class="category">
                                                     <div class="category-content">
@@ -301,19 +301,19 @@
                                             </div>
                                         </li>
                                         <li>
-                                            <a href="single_page.html">Thanh toán<i class="fa fa-angle-down"></i></a>
+                                            <a href="#">Thanh toán<i class="fa fa-angle-down"></i></a>
                                             <div class="sub_menu sub_menu_six">
                                                 <div class="line"></div>
                                             </div>
                                         </li>
                                         <li>
-                                            <a href="single_page.html">Khuyến mại<i class="fa fa-angle-down"></i></a>
+                                            <a href="#">Khuyến mại<i class="fa fa-angle-down"></i></a>
                                             <!-- <div class="sub_menu sub_menu_seven">
                                                 <div class="line"></div>
                                             </div> -->
                                         </li>
                                         <li class="menu_drop_down">
-                                            <a href="single_page.html">Hỏi đáp<i class="fa fa-angle-down"></i></a>
+                                            <a href="#">Hỏi đáp<i class="fa fa-angle-down"></i></a>
                                         </li>
                                     </ul>
                                 </nav>
@@ -367,7 +367,7 @@
                     </div>
                     <div class="container">
                         <div class="item item-type-zoom">
-                            <a class="item-hover" href="single_page.html">
+                            <a class="item-hover" href="#">
                                 <div class="item-info">
                                     <div class="headline">
                                         Xem chi tiết
@@ -391,7 +391,7 @@
                             <p><i class="fa fa-heart"></i></p>
                         </div>
                         <div class="add-to-compare">
-                            <p><i class="fa fa-plus-circle"></i></p>
+                            <p><i class="fa fa-search"></i></p>
                         </div>
                     </div>
                 </div>
@@ -401,7 +401,7 @@
                     </div>
                     <div class="container">
                         <div class="item item-type-zoom">
-                            <a class="item-hover" href="single_page.html">
+                            <a class="item-hover" href="#">
                                 <div class="item-info">
                                     <div class="headline">
                                         Xem chi tiết
@@ -425,7 +425,7 @@
                             <p><i class="fa fa-heart"></i></p>
                         </div>
                         <div class="add-to-compare">
-                            <p><i class="fa fa-plus-circle"></i></p>
+                            <p><i class="fa fa-search"></i></p>
                         </div>
                     </div>
                 </div>
@@ -435,7 +435,7 @@
                     </div>
                     <div class="container">
                         <div class="item item-type-zoom">
-                            <a class="item-hover" href="single_page.html">
+                            <a class="item-hover" href="#">
                                 <div class="item-info">
                                     <div class="headline">
                                         Xem chi tiết
@@ -459,7 +459,7 @@
                             <p><i class="fa fa-heart"></i></p>
                         </div>
                         <div class="add-to-compare">
-                            <p><i class="fa fa-plus-circle"></i></p>
+                            <p><i class="fa fa-search"></i></p>
                         </div>
                     </div>
                 </div>
@@ -469,7 +469,7 @@
                     </div>
                     <div class="container">
                         <div class="item item-type-zoom">
-                            <a class="item-hover" href="single_page.html">
+                            <a class="item-hover" href="#">
                                 <div class="item-info">
                                     <div class="headline">
                                         Xem chi tiết
@@ -493,7 +493,7 @@
                             <p><i class="fa fa-heart"></i></p>
                         </div>
                         <div class="add-to-compare">
-                            <p><i class="fa fa-plus-circle"></i></p>
+                            <p><i class="fa fa-search"></i></p>
                         </div>
                     </div>
                 </div>
@@ -514,7 +514,7 @@
                     </div>
                     <div class="container">
                         <div class="item item-type-zoom">
-                            <a class="item-hover" href="single_page.html">
+                            <a class="item-hover" href="#">
                                 <div class="item-info">
                                     <div class="headline">
                                         Xem chi tiết
@@ -538,7 +538,7 @@
                             <p><i class="fa fa-heart"></i></p>
                         </div>
                         <div class="add-to-compare">
-                            <p><i class="fa fa-plus-circle"></i></p>
+                            <p><i class="fa fa-search"></i></p>
                         </div>
                     </div>
                 </div>
@@ -548,7 +548,7 @@
                     </div>
                     <div class="container">
                         <div class="item item-type-zoom">
-                            <a class="item-hover" href="single_page.html">
+                            <a class="item-hover" href="#">
                                 <div class="item-info">
                                     <div class="headline">
                                         Xem chi tiết
@@ -572,7 +572,7 @@
                             <p><i class="fa fa-heart"></i></p>
                         </div>
                         <div class="add-to-compare">
-                            <p><i class="fa fa-plus-circle"></i></p>
+                            <p><i class="fa fa-search"></i></p>
                         </div>
                     </div>
                 </div>
@@ -582,7 +582,7 @@
                     </div>
                     <div class="container">
                         <div class="item item-type-zoom">
-                            <a class="item-hover" href="single_page.html">
+                            <a class="item-hover" href="#">
                                 <div class="item-info">
                                     <div class="headline">
                                         Xem chi tiết
@@ -606,7 +606,7 @@
                             <p><i class="fa fa-heart"></i></p>
                         </div>
                         <div class="add-to-compare">
-                            <p><i class="fa fa-plus-circle"></i></p>
+                            <p><i class="fa fa-search"></i></p>
                         </div>
                     </div>
                 </div>
@@ -616,7 +616,7 @@
                     </div>
                     <div class="container">
                         <div class="item item-type-zoom">
-                            <a class="item-hover" href="single_page.html">
+                            <a class="item-hover" href="#">
                                 <div class="item-info">
                                     <div class="headline">
                                         Xem chi tiết
@@ -640,7 +640,7 @@
                             <p><i class="fa fa-heart"></i></p>
                         </div>
                         <div class="add-to-compare">
-                            <p><i class="fa fa-plus-circle"></i></p>
+                            <p><i class="fa fa-search"></i></p>
                         </div>
                     </div>
                 </div>
@@ -650,7 +650,7 @@
                     </div>
                     <div class="container">
                         <div class="item item-type-zoom">
-                            <a class="item-hover" href="single_page.html">
+                            <a class="item-hover" href="#">
                                 <div class="item-info">
                                     <div class="headline">
                                         Xem chi tiết
@@ -674,7 +674,7 @@
                             <p><i class="fa fa-heart"></i></p>
                         </div>
                         <div class="add-to-compare">
-                            <p><i class="fa fa-plus-circle"></i></p>
+                            <p><i class="fa fa-search"></i></p>
                         </div>
                     </div>
                 </div>
@@ -684,7 +684,7 @@
                     </div>
                     <div class="container">
                         <div class="item item-type-zoom">
-                            <a class="item-hover" href="single_page.html">
+                            <a class="item-hover" href="#">
                                 <div class="item-info">
                                     <div class="headline">
                                         Xem chi tiết
@@ -708,7 +708,7 @@
                             <p><i class="fa fa-heart"></i></p>
                         </div>
                         <div class="add-to-compare">
-                            <p><i class="fa fa-plus-circle"></i></p>
+                            <p><i class="fa fa-search"></i></p>
                         </div>
                     </div>
                 </div>
@@ -718,7 +718,7 @@
                     </div>
                     <div class="container">
                         <div class="item item-type-zoom">
-                            <a class="item-hover" href="single_page.html">
+                            <a class="item-hover" href="#">
                                 <div class="item-info">
                                     <div class="headline">
                                         Xem chi tiết
@@ -742,7 +742,7 @@
                             <p><i class="fa fa-heart"></i></p>
                         </div>
                         <div class="add-to-compare">
-                            <p><i class="fa fa-plus-circle"></i></p>
+                            <p><i class="fa fa-search"></i></p>
                         </div>
                     </div>
                 </div>
@@ -752,7 +752,7 @@
                     </div>
                     <div class="container">
                         <div class="item item-type-zoom">
-                            <a class="item-hover" href="single_page.html">
+                            <a class="item-hover" href="#">
                                 <div class="item-info">
                                     <div class="headline">
                                         Xem chi tiết
@@ -776,7 +776,7 @@
                             <p><i class="fa fa-heart"></i></p>
                         </div>
                         <div class="add-to-compare">
-                            <p><i class="fa fa-plus-circle"></i></p>
+                            <p><i class="fa fa-search"></i></p>
                         </div>
                     </div>
                 </div>
@@ -789,7 +789,7 @@
                     </div>
                     <div class="container">
                         <div class="item item-type-zoom">
-                            <a class="item-hover" href="single_page.html">
+                            <a class="item-hover" href="#">
                                 <div class="item-info">
                                     <div class="headline">
                                         Xem chi tiết
@@ -813,7 +813,7 @@
                             <p><i class="fa fa-heart"></i></p>
                         </div>
                         <div class="add-to-compare">
-                            <p><i class="fa fa-plus-circle"></i></p>
+                            <p><i class="fa fa-search"></i></p>
                         </div>
                     </div>
                 </div>
@@ -823,7 +823,7 @@
                     </div>
                     <div class="container">
                         <div class="item item-type-zoom">
-                            <a class="item-hover" href="single_page.html">
+                            <a class="item-hover" href="#">
                                 <div class="item-info">
                                     <div class="headline">
                                         Xem chi tiết
@@ -847,7 +847,7 @@
                             <p><i class="fa fa-heart"></i></p>
                         </div>
                         <div class="add-to-compare">
-                            <p><i class="fa fa-plus-circle"></i></p>
+                            <p><i class="fa fa-search"></i></p>
                         </div>
                     </div>
                 </div>
@@ -857,7 +857,7 @@
                     </div>
                     <div class="container">
                         <div class="item item-type-zoom">
-                            <a class="item-hover" href="single_page.html">
+                            <a class="item-hover" href="#">
                                 <div class="item-info">
                                     <div class="headline">
                                         Xem chi tiết
@@ -881,7 +881,7 @@
                             <p><i class="fa fa-heart"></i></p>
                         </div>
                         <div class="add-to-compare">
-                            <p><i class="fa fa-plus-circle"></i></p>
+                            <p><i class="fa fa-search"></i></p>
                         </div>
                     </div>
                 </div>
@@ -891,7 +891,7 @@
                     </div>
                     <div class="container">
                         <div class="item item-type-zoom">
-                            <a class="item-hover" href="single_page.html">
+                            <a class="item-hover" href="#">
                                 <div class="item-info">
                                     <div class="headline">
                                         Xem chi tiết
@@ -915,7 +915,7 @@
                             <p><i class="fa fa-heart"></i></p>
                         </div>
                         <div class="add-to-compare">
-                            <p><i class="fa fa-plus-circle"></i></p>
+                            <p><i class="fa fa-search"></i></p>
                         </div>
                     </div>
                 </div>
@@ -937,7 +937,7 @@
     });
 
     function slide(prev) {
-        var slides = $('single_page.htmlslideshow li');
+        var slides = $('#slideshow li');
         var currElement = slides.filter('.current');
         var lastElement = slides.filter(':last');
         var firstElement = slides.filter(':first');
@@ -987,12 +987,12 @@
 
     function slideshow(time) {
         var idset = setInterval('slide()', time);
-        $('single_page.htmlnext').click(function() {
+        $('#next').click(function() {
             slide();
             clearInterval(idset);
             idset = setInterval('slide()', time);
         });
-        $('single_page.htmlprev').click(function() {
+        $('#prev').click(function() {
             slide(true);
             clearInterval(idset);
             idset = setInterval('slide()', time);
