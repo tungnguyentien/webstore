@@ -16,6 +16,40 @@
 
 <body>
     <div class="container-fluid">
+        <div class="backdrop"></div>
+        <div class="layout-cart">
+            <div class="header-modal">
+                <p><i class="fa fa-check"></i> Sản phẩm được thêm vào giỏ hàng thành công !</p>
+                <span class="icon-remove"><i class="fa fa-times"></i></span>
+            </div>
+            <div class="content-modal">
+                <div class="col-md-4">
+                    <div class="image-view">
+                        <img src="images/asus.png" alt="">
+                    </div>
+                    <div class="list-color">
+                        <ul>
+                            <li style="background-color: #E64545;"></li>
+                            <li style="background-color: white;"></li>
+                            <li style="background-color: black;"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="product-info">
+                        <label for="">Tên sản phẩm:</label>
+                        <label for="">Giá: </label>
+                        <label for="">Mô tả:</label>
+                        <label for="">Số lượng:</label>
+                        <label for="">Tổng cộng: </label>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-modal">
+                <button class="btn-continue"><i class="fa fa-cart-plus"></i> Tiếp tục</button>
+                <button class="btn-checkout"><i class="fa fa-check-square-o"></i> Thanh toán</button>
+            </div>
+        </div>
         <div class="header-container">
             <header id="header">
                 <div class="top_header_nav">
@@ -24,12 +58,11 @@
                             <div class="nav">
                                 <div class="left_top_header col-md-5"></div>
                                 <div class="center_top_header col-md-2">
-                                    <h5>Welcome to my website</h5>
                                 </div>
                                 <ul id="header_links" class="col-md-5  text-right">
                                     <li>
                                         <i class="fa fa-user"></i>
-                                        <a href="single_page.html">Account</a>
+                                        <a href="single_page.html">Tài khoản</a>
                                     </li>
                                     <li>
                                         <i class="fa fa-heart"></i>
@@ -37,11 +70,11 @@
                                     </li>
                                     <li>
                                         <i class="fa fa-cart-arrow-down"></i>
-                                        <a href="single_page.html">My Cart</a>
+                                        <a href="single_page.html">Giỏ hàng</a>
                                     </li>
                                     <li>
                                         <i class="fa fa-facebook-official"></i>
-                                        <a href="login.html">Login</a>
+                                        <a href="login.html">Đăng nhập</a>
                                     </li>
                                 </ul>
                             </div>
@@ -56,7 +89,7 @@
                                 <div class="field-search">
                                     <input type="text" class="form-control" name="search_query" value="Search..." id="search_query_top">
                                     <button class="btn button-search">
-                                        <i class="fa fa-plus-circle"></i>
+                                        <i class="fa fa-search"></i>
                                     </button>
                                 </div>
                             </div>
@@ -361,145 +394,283 @@
         <div class="container">
             <div class="hot-product">
                 <h2 class="block-title">Sản Phẩm Bán Chạy</h2>
-                <div class="product-item">
-                    <div class="new-product">
-                        <span class="hot"><img src="images/hot.png"></span>
-                    </div>
-                    <div class="container">
-                        <div class="item item-type-zoom">
-                            <a class="item-hover" href="single_page.html">
-                                <div class="item-info">
-                                    <div class="headline">
-                                        Xem chi tiết
-                                        <div class="line"></div>
-                                        <div class="date">Iphone 6</div>
+                <div class="product-carousel">
+                    <div class="product-item">
+                        <div class="new-product">
+                            <span class="hot"><img src="images/hot.png"></span>
+                        </div>
+                        <div class="container">
+                            <div class="item item-type-zoom">
+                                <a class="item-hover" href="single_page.html">
+                                    <div class="item-info">
+                                        <div class="headline">
+                                            Xem chi tiết
+                                            <div class="line"></div>
+                                            <div class="date">Iphone 6</div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="mask"></div>
-                            </a>
-                            <div class="item-img"><img src="images/iphone.png" alt=""></div>
+                                    <div class="mask"></div>
+                                </a>
+                                <div class="item-img"><img src="images/iphone.png" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="product-name">
+                            <p>Iphone 6<span>$50</span></p>
+                        </div>
+                        <div class="product-button">
+                            <div class="add-to-cart">
+                                <p><i class="fa fa-shopping-cart"></i><span>ADD TO CART</span></p>
+                            </div>
+                            <div class="add-to-wishlist">
+                                <p><i class="fa fa-heart"></i></p>
+                            </div>
+                            <div class="add-to-compare">
+                                <p><i class="fa fa-plus-circle"></i></p>
+                            </div>
                         </div>
                     </div>
-                    <div class="product-name">
-                        <p>Iphone 6<span>$50</span></p>
-                    </div>
-                    <div class="product-button">
-                        <div class="add-to-cart">
-                            <p><i class="fa fa-shopping-cart"></i><span>ADD TO CART</span></p>
+                    <div class="product-item">
+                        <div class="new-product">
+                            <span class="hot"><img src="images/hot.png"></span>
                         </div>
-                        <div class="add-to-wishlist">
-                            <p><i class="fa fa-heart"></i></p>
-                        </div>
-                        <div class="add-to-compare">
-                            <p><i class="fa fa-plus-circle"></i></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <div class="new-product">
-                        <span class="hot"><img src="images/hot.png"></span>
-                    </div>
-                    <div class="container">
-                        <div class="item item-type-zoom">
-                            <a class="item-hover" href="single_page.html">
-                                <div class="item-info">
-                                    <div class="headline">
-                                        Xem chi tiết
-                                        <div class="line"></div>
-                                        <div class="date">Samsung galaxy</div>
+                        <div class="container">
+                            <div class="item item-type-zoom">
+                                <a class="item-hover" href="single_page.html">
+                                    <div class="item-info">
+                                        <div class="headline">
+                                            Xem chi tiết
+                                            <div class="line"></div>
+                                            <div class="date">Samsung galaxy</div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="mask"></div>
-                            </a>
-                            <div class="item-img"><img src="images/sumsung.png" alt=""></div>
+                                    <div class="mask"></div>
+                                </a>
+                                <div class="item-img"><img src="images/sumsung.png" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="product-name">
+                            <p>Samsung<span>$55</span></p>
+                        </div>
+                        <div class="product-button">
+                            <div class="add-to-cart">
+                                <p><i class="fa fa-shopping-cart"></i><span>ADD TO CART</span></p>
+                            </div>
+                            <div class="add-to-wishlist">
+                                <p><i class="fa fa-heart"></i></p>
+                            </div>
+                            <div class="add-to-compare">
+                                <p><i class="fa fa-plus-circle"></i></p>
+                            </div>
                         </div>
                     </div>
-                    <div class="product-name">
-                        <p>Samsung<span>$55</span></p>
-                    </div>
-                    <div class="product-button">
-                        <div class="add-to-cart">
-                            <p><i class="fa fa-shopping-cart"></i><span>ADD TO CART</span></p>
+                    <div class="product-item">
+                        <div class="new-product">
+                            <span class="hot"><img src="images/hot.png"></span>
                         </div>
-                        <div class="add-to-wishlist">
-                            <p><i class="fa fa-heart"></i></p>
-                        </div>
-                        <div class="add-to-compare">
-                            <p><i class="fa fa-plus-circle"></i></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <div class="new-product">
-                        <span class="hot"><img src="images/hot.png"></span>
-                    </div>
-                    <div class="container">
-                        <div class="item item-type-zoom">
-                            <a class="item-hover" href="single_page.html">
-                                <div class="item-info">
-                                    <div class="headline">
-                                        Xem chi tiết
-                                        <div class="line"></div>
-                                        <div class="date">Asus Zenfone 5</div>
+                        <div class="container">
+                            <div class="item item-type-zoom">
+                                <a class="item-hover" href="single_page.html">
+                                    <div class="item-info">
+                                        <div class="headline">
+                                            Xem chi tiết
+                                            <div class="line"></div>
+                                            <div class="date">Asus Zenfone 5</div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="mask"></div>
-                            </a>
-                            <div class="item-img"><img src="images/asus.png" alt=""></div>
+                                    <div class="mask"></div>
+                                </a>
+                                <div class="item-img"><img src="images/asus.png" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="product-asus">
+                            <p>Asus Zenfone<span>$30</span></p>
+                        </div>
+                        <div class="product-button">
+                            <div class="add-to-cart">
+                                <p><i class="fa fa-shopping-cart"></i><span>ADD TO CART</span></p>
+                            </div>
+                            <div class="add-to-wishlist">
+                                <p><i class="fa fa-heart"></i></p>
+                            </div>
+                            <div class="add-to-compare">
+                                <p><i class="fa fa-plus-circle"></i></p>
+                            </div>
                         </div>
                     </div>
-                    <div class="product-asus">
-                        <p>Asus Zenfone<span>$30</span></p>
-                    </div>
-                    <div class="product-button">
-                        <div class="add-to-cart">
-                            <p><i class="fa fa-shopping-cart"></i><span>ADD TO CART</span></p>
+                    <div class="product-item">
+                        <div class="new-product">
+                            <span class="hot"><img src="images/hot.png"></span>
                         </div>
-                        <div class="add-to-wishlist">
-                            <p><i class="fa fa-heart"></i></p>
-                        </div>
-                        <div class="add-to-compare">
-                            <p><i class="fa fa-plus-circle"></i></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <div class="new-product">
-                        <span class="hot"><img src="images/hot.png"></span>
-                    </div>
-                    <div class="container">
-                        <div class="item item-type-zoom">
-                            <a class="item-hover" href="single_page.html">
-                                <div class="item-info">
-                                    <div class="headline">
-                                        Xem chi tiết
-                                        <div class="line"></div>
-                                        <div class="date">Samsung</div>
+                        <div class="container">
+                            <div class="item item-type-zoom">
+                                <a class="item-hover" href="single_page.html">
+                                    <div class="item-info">
+                                        <div class="headline">
+                                            Xem chi tiết
+                                            <div class="line"></div>
+                                            <div class="date">Samsung</div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="mask"></div>
-                            </a>
-                            <div class="item-img"><img src="images/samsung2.png" alt=""></div>
+                                    <div class="mask"></div>
+                                </a>
+                                <div class="item-img"><img src="images/samsung2.png" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="product-name">
+                            <p>Samsung<span>$35</span></p>
+                        </div>
+                        <div class="product-button">
+                            <div class="add-to-cart">
+                                <p><i class="fa fa-shopping-cart"></i><span>ADD TO CART</span></p>
+                            </div>
+                            <div class="add-to-wishlist">
+                                <p><i class="fa fa-heart"></i></p>
+                            </div>
+                            <div class="add-to-compare">
+                                <p><i class="fa fa-plus-circle"></i></p>
+                            </div>
                         </div>
                     </div>
-                    <div class="product-name">
-                        <p>Samsung<span>$35</span></p>
+                    <div class="product-item">
+                        <div class="new-product">
+                            <span class="hot"><img src="images/hot.png"></span>
+                        </div>
+                        <div class="container">
+                            <div class="item item-type-zoom">
+                                <a class="item-hover" href="single_page.html">
+                                    <div class="item-info">
+                                        <div class="headline">
+                                            Xem chi tiết
+                                            <div class="line"></div>
+                                            <div class="date">Iphone 6</div>
+                                        </div>
+                                    </div>
+                                    <div class="mask"></div>
+                                </a>
+                                <div class="item-img"><img src="images/iphone.png" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="product-name">
+                            <p>Iphone 6<span>$50</span></p>
+                        </div>
+                        <div class="product-button">
+                            <div class="add-to-cart">
+                                <p><i class="fa fa-shopping-cart"></i><span>ADD TO CART</span></p>
+                            </div>
+                            <div class="add-to-wishlist">
+                                <p><i class="fa fa-heart"></i></p>
+                            </div>
+                            <div class="add-to-compare">
+                                <p><i class="fa fa-plus-circle"></i></p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="product-button">
-                        <div class="add-to-cart">
-                            <p><i class="fa fa-shopping-cart"></i><span>ADD TO CART</span></p>
+                    <div class="product-item">
+                        <div class="new-product">
+                            <span class="hot"><img src="images/hot.png"></span>
                         </div>
-                        <div class="add-to-wishlist">
-                            <p><i class="fa fa-heart"></i></p>
+                        <div class="container">
+                            <div class="item item-type-zoom">
+                                <a class="item-hover" href="single_page.html">
+                                    <div class="item-info">
+                                        <div class="headline">
+                                            Xem chi tiết
+                                            <div class="line"></div>
+                                            <div class="date">Samsung galaxy</div>
+                                        </div>
+                                    </div>
+                                    <div class="mask"></div>
+                                </a>
+                                <div class="item-img"><img src="images/sumsung.png" alt=""></div>
+                            </div>
                         </div>
-                        <div class="add-to-compare">
-                            <p><i class="fa fa-plus-circle"></i></p>
+                        <div class="product-name">
+                            <p>Samsung<span>$55</span></p>
+                        </div>
+                        <div class="product-button">
+                            <div class="add-to-cart">
+                                <p><i class="fa fa-shopping-cart"></i><span>ADD TO CART</span></p>
+                            </div>
+                            <div class="add-to-wishlist">
+                                <p><i class="fa fa-heart"></i></p>
+                            </div>
+                            <div class="add-to-compare">
+                                <p><i class="fa fa-plus-circle"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="new-product">
+                            <span class="hot"><img src="images/hot.png"></span>
+                        </div>
+                        <div class="container">
+                            <div class="item item-type-zoom">
+                                <a class="item-hover" href="single_page.html">
+                                    <div class="item-info">
+                                        <div class="headline">
+                                            Xem chi tiết
+                                            <div class="line"></div>
+                                            <div class="date">Asus Zenfone 5</div>
+                                        </div>
+                                    </div>
+                                    <div class="mask"></div>
+                                </a>
+                                <div class="item-img"><img src="images/asus.png" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="product-asus">
+                            <p>Asus Zenfone<span>$30</span></p>
+                        </div>
+                        <div class="product-button">
+                            <div class="add-to-cart">
+                                <p><i class="fa fa-shopping-cart"></i><span>ADD TO CART</span></p>
+                            </div>
+                            <div class="add-to-wishlist">
+                                <p><i class="fa fa-heart"></i></p>
+                            </div>
+                            <div class="add-to-compare">
+                                <p><i class="fa fa-plus-circle"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="new-product">
+                            <span class="hot"><img src="images/hot.png"></span>
+                        </div>
+                        <div class="container">
+                            <div class="item item-type-zoom">
+                                <a class="item-hover" href="single_page.html">
+                                    <div class="item-info">
+                                        <div class="headline">
+                                            Xem chi tiết
+                                            <div class="line"></div>
+                                            <div class="date">Samsung</div>
+                                        </div>
+                                    </div>
+                                    <div class="mask"></div>
+                                </a>
+                                <div class="item-img"><img src="images/samsung2.png" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="product-name">
+                            <p>Samsung<span>$35</span></p>
+                        </div>
+                        <div class="product-button">
+                            <div class="add-to-cart">
+                                <p><i class="fa fa-shopping-cart"></i><span>ADD TO CART</span></p>
+                            </div>
+                            <div class="add-to-wishlist">
+                                <p><i class="fa fa-heart"></i></p>
+                            </div>
+                            <div class="add-to-compare">
+                                <p><i class="fa fa-plus-circle"></i></p>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="control-button">
-                    <span class="step-backward"><i class="fa fa-step-backward"></i></span>
-                    <span class="step-forward"><i class="fa fa-step-forward"></i></span>
+                    <span class="step-backward carousel-prev"><i class="fa fa-step-backward"></i></span>
+                    <span class="step-forward carousel-next"><i class="fa fa-step-forward"></i></span>
                 </div>
             </div>
             <div class="banner">
@@ -929,15 +1100,52 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
-    //
-    <script src="js/slider.js"></script>
     <script type="text/javascript">
     $(document).ready(function() {
         slideshow(3000);
+        carouselshow(5000);
     });
 
+    function carousel() {
+        var carousel = $('.product-carousel');
+        var left = parseInt(carousel.css('left'));
+        if (left < -1000) left = 0;
+        left -= 283;
+        carousel.animate({
+            left: left
+        }, 1000);
+    }
+
+    function carouselshow(time) {
+        var idset = setInterval('carousel()', time);
+        // Carousel
+        $('.carousel-prev').click(function() {
+            var carousel = $('.product-carousel');
+            var left = parseInt(carousel.css('left'));
+            if (left == 0) left = -283 * 4;
+            left += 283;
+            carousel.animate({
+                left: left
+            }, 500);
+            clearInterval(idset);
+            idset = setInterval('carousel()', time);
+        });
+        $('.carousel-next').click(function() {
+            var carousel = $('.product-carousel');
+            var left = parseInt(carousel.css('left'));
+            if (left < -1000) left = 0;
+            left -= 283;
+            // if (left < -4000) left = 0;
+            carousel.animate({
+                left: left
+            }, 500);
+            clearInterval(idset);
+            idset = setInterval('carousel()', time);
+        });
+    }
+
     function slide(prev) {
-        var slides = $('single_page.htmlslideshow li');
+        var slides = $('#slideshow li');
         var currElement = slides.filter('.current');
         var lastElement = slides.filter(':last');
         var firstElement = slides.filter(':first');
@@ -987,12 +1195,12 @@
 
     function slideshow(time) {
         var idset = setInterval('slide()', time);
-        $('single_page.htmlnext').click(function() {
+        $('#next').click(function() {
             slide();
             clearInterval(idset);
             idset = setInterval('slide()', time);
         });
-        $('single_page.htmlprev').click(function() {
+        $('#prev').click(function() {
             slide(true);
             clearInterval(idset);
             idset = setInterval('slide()', time);
