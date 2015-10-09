@@ -13,6 +13,8 @@ $(document).ready(function() {
 
 	// Add item to cart
 	$('.add-to-cart').click(function(){
+		var height = $('body').height();
+		$('.backdrop').css('height',height);
 		$('.backdrop').fadeIn(250);
 		$('.layout-cart').fadeIn(450);
 		var img = $(this).parent().siblings('.container').find('img');
