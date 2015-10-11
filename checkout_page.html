@@ -351,15 +351,15 @@
                     <input type="date">
                     <br>
                     <label for="">Hình thức thanh toán: </label>
-                    <input type="radio" name="online" id="">
-                    <label for="man" class="type-of-pay">Online</label>
-                    <input type="radio" name="online" id="">
-                    <label for="woman" class="type-of-pay">Khi nhận hàng</label>
+                    <input type="radio" name="online" id="online">
+                    <label for="online" class="type-of-pay">Online</label>
+                    <input type="radio" name="online" id="offline">
+                    <label for="offline" class="type-of-pay">Khi nhận hàng</label>
                 </div>
             </div>
             <div class="checkout-form">
                 <h3 class="block-title">Thông tin giỏ hàng</h3>
-                <table class="table table-striped">
+                <table class="table table-striped table-product">
                     <thead>
                         <tr>
                             <th>Sản phẩm</th>
@@ -368,19 +368,10 @@
                             <th>Giá đơn chiếc</th>
                             <th>Số lượng</th>
                             <th>Tổng giá</th>
+                            <th>Edit</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Màn hình: </td>
-                            <td>Full HD, 5.0", 1080 x 1920 pixels</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Camera sau:</td>
-                            <td>16 MP, Quay phim FullHD 1080p@30fps</td>
-                        </tr>
                     </tbody>
                 </table>
             </div>
@@ -414,6 +405,86 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script>
+    $(document).ready(function() {
+        displayShoppingCartItems();
+    });
+
+    function update(name, number) {
+        $.each(shoppingCartItems, function(index, value) {
+            if (value.name == name) {
+                value.quantity = number;
+            };
+        });
+        sessionStorage["shopping-cart-items"] = JSON.stringify(shoppingCartItems);
+        $('.table-product > tbody').html('');
+        displayShoppingCartItems();
+    }
+
+    function removeItem(name) {
+        var item;
+        $.each(shoppingCartItems, function(index, value) {
+            if (value.name == name) {
+                item = value;
+            };
+        });
+        var index = shoppingCartItems.indexOf(item);
+        shoppingCartItems.splice(index, 1);
+        sessionStorage["shopping-cart-items"] = JSON.stringify(shoppingCartItems);
+        $('.table-product > tbody').html('');
+        displayShoppingCartItems();
+    }
+
+    function formatMoney(number) {
+        number = number.toFixed(0).replace(/./g, function(c, i, a) {
+            return i && c !== "." && ((a.length - i) % 3 === 0) ? ',' + c : c;
+        });
+        return number;
+    }
+
+    function displayShoppingCartItems() {
+        if (sessionStorage["shopping-cart-items"].length != null) {
+            shoppingCartItems = JSON.parse(sessionStorage["shopping-cart-items"].toString());
+            console.log(shoppingCartItems);
+            var totalMoney = 0;
+            $.each(shoppingCartItems, function(index, value) {
+                var htmlString = "";
+                var price = parseInt((value.price).replace(/ /g, ''));
+                var totalPrice = price * value.quantity;
+                totalMoney += totalPrice;
+                price = formatMoney(price);
+                totalPrice = formatMoney(totalPrice);
+                htmlString += '<tr>' + '<td class="product-image"><img src="' + value.image + '" alt=""></td>' + '<td> <a href="" class="product-name">' + value.name + '</a>' + '<span>Mã SP: ' + value.id + '</span>' + '<span>Màu: Đen</span>' + '</td>' + '<td><span class="status"><i class="fa fa-check-square-o"></i></span></td>' + '<td><span class="price">' + price + '</span></td>' + '<td class="number-products">' + '<span class="minus"><i class="fa fa-minus"></i></span>' + '<input type="text" class="number-product" value="' + value.quantity + '" id="numberOfProducts">' + '<span class="add"><i class="fa fa-plus"></i></span></td>' + '<td><span class="price">' + totalPrice + '</span></td>' + '<td><span class="button-remove">Xóa</span></td>' + '</tr>';
+
+                $('.table-product > tbody:last').append(htmlString);
+
+            });
+            var htmlString = "";
+            totalMoneyAfterShip = totalMoney + 120000;
+            totalMoney = formatMoney(totalMoney);
+            totalMoneyAfterShip = formatMoney(totalMoneyAfterShip);
+            htmlString += '<tr>' + '<td colspan="3"></td>' + '<td colspan="2">' + '<label for="">Tổng giá thành</label>' + '</td>' + '<td><span>' + totalMoney + '</span></td>' + '<td></td>' + '</tr>' + '<tr>' + '<td colspan="3"></td>' + '<td colspan="2">' + '<label for="">Phí vận chuyển</label>' + '</td>' + '<td><span>120,000</span></td>' + '<td></td>' + '</tr>' + '<tr>' + '<td colspan="3"></td>' + '<td colspan="2">' + '<label for="">Tổng giá trị đơn hàng</label>' + '</td>' + '<td><span>' + totalMoneyAfterShip + '</span></td>' + '<td></td>' + '</tr>' + '<tr>' + '<td colspan="7">' + '<span class="button-checkout"><i class="fa fa-check-square-o"></i> Thanh toán</span>' + '</td>' + '</tr>';
+            $('.table-product > tbody:last').append(htmlString);
+        }
+        $('span.add').click(function() {
+            var num = parseInt($(this).siblings('input').val());
+            $(this).siblings('input').val(num + 1);
+            var name = $(this).parent().siblings().find('.product-name').text();
+            update(name, num + 1);
+        });
+        $('span.minus').click(function() {
+            var num = parseInt($(this).siblings('input').val());
+            if (num <= 1) num = 2;
+            $(this).siblings('input').val(num - 1);
+            var name = $(this).parent().siblings().find('.product-name').text();
+            update(name, num - 1);
+        });
+        $('.button-remove').click(function() {
+            var name = $(this).parent().siblings().find('.product-name').text();
+            removeItem(name);
+        })
+    }
+    </script>
 </body>
 
 </html>
