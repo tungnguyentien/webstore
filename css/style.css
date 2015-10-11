@@ -1439,3 +1439,14 @@ body {
     margin-left: 25px;
     margin-top: 5px;
 }
+.compare_page {
+
+}
+.compare_page .table-compare {
+    width: 100%;
+    height: 800px;
+    border: 1px solid;
+}
+.compare_page .recommend-product {
+    padding: 0px;
+}
