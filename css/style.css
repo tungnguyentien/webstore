@@ -1052,7 +1052,7 @@ body {
     -webkit-box-shadow: 0 -1px rgba(0, 0, 0, 0.2) inset;
 }
 
-.single_page .information-detail {
+.information-detail {
     height: 350px;
     border-width: 1px;
     border-style: solid;
@@ -1422,16 +1422,26 @@ body {
     padding: 20px;
 }
 
+.layout-cart .content-modal > .col-md-4 {
+    height: 350px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fff;
+    ms-box-shadow: 0 -1px rgba(0, 0, 0, 0.2) inset;
+    -webkit-box-shadow: 0 -1px rgba(0, 0, 0, 0.2) inset;
+}
+
 .layout-cart .content-modal .image-view {
     width: 220px;
     height: 300px;
     display: inline-block;
-    padding: 10px 20px;
+    text-align: center;
 }
 
 .content-modal .image-view > img {
     width: 220px;
     height: auto;
+    margin-top: 50px;
 }
 
 .content-modal .product-info {
@@ -1543,7 +1553,12 @@ body {
 .compare_page .table-compare {
     width: 100%;
     height: auto;
-    border: 1px solid #ddd;
+    border-width: 1px 1px 1px;
+    border-left: 0px;
+    border-style: solid;
+    border-color: #fff;
+    ms-box-shadow: 0 -1px rgba(0, 0, 0, 0.2) inset;
+    -webkit-box-shadow: 0 -1px rgba(0, 0, 0, 0.2) inset;
 }
 
 .compare_page .recommend-product {
@@ -1568,8 +1583,9 @@ body {
 .compare_page .table-compare .color-product-compare span {
     display: inline-block;
     margin-top: 20px;
+    margin-right: 10px;
     padding: 3px 5px;
-    border: 2px solid lightblue;
+    border: 2px solid #08BBB7;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
     -ms-border-radius: 10px;
@@ -1585,21 +1601,130 @@ body {
 
 .compare_page .table-compare .img-product-compare .product-compare-name {
     text-decoration: bold;
-    margin-left: 180px;
+    text-align: center;
 }
 
 .compare_page .table-compare .img-product-compare .product-compare-price {
     text-decoration: bold;
-    color: red;
-    margin-left: 190px;
+    color: orange;
+    text-align: center;
 }
 
 .compare_page .table-compare .img-product-compare .column3 {
     width: 420px;
 }
 
+
 /*Article Page*/
+
 .article_page .content-article {
-    height: 800px;
-    border: 1px solid;
+    height: auto;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fff;
+    ms-box-shadow: 0 -1px rgba(0, 0, 0, 0.2) inset;
+    -webkit-box-shadow: 0 -1px rgba(0, 0, 0, 0.2) inset;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.article_page .content-article .article-time {
+    font-style: italic;
+    color: #aaa;
+}
+
+.article_page .content-article .article-time span {
+    color: lightblue;
+}
+
+.article_page .content-article .article-introduction {
+    font-weight: bold;
+}
+
+.article_page .content-article .article-title-number {
+    font-weight: bold;
+}
+
+.article_page .content-article img {
+    padding: 10px 20px 20px;
+    width: 720px;
+}
+
+.article_page .content-article .article-reference {
+    text-align: right;
+    font-weight: bold;
+}
+
+.article_page .content-article .article-writer {
+    text-align: right;
+    color: #aaa;
+}
+
+.breadcrumb {
+    margin-top: 20px;
+    padding: 20px 10px;
+    width: 100%;
+    height: 50px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fff;
+    ms-box-shadow: 0 -1px rgba(0, 0, 0, 0.2) inset;
+    -webkit-box-shadow: 0 -1px rgba(0, 0, 0, 0.2) inset;
+}
+
+.breadcrumb > span {
+    font-size: 16px;
+    margin: 0px 10px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.breadcrumb .current-page {
+    color: orange;
+}
+
+
+/*Checkout Page*/
+
+.checkout_page .customer-information {
+    width: 100%;
+    height: 300px;
+    margin: 20px 0px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fff;
+    font-size: 16px;
+    ms-box-shadow: 0 -1px rgba(0, 0, 0, 0.2) inset;
+    -webkit-box-shadow: 0 -1px rgba(0, 0, 0, 0.2) inset;
+}
+
+.customer-information label {
+    margin: 20px 10px;
+    font-weight: normal;
+    width: 150px;
+}
+
+.customer-information span.info {
+    font-style: italic;
+    color: orange;
+}
+.customer-information input[type='text'] {
+    width: 250px;
+    padding: 0 5px;
+}
+.customer-information .type-of-pay {
+    margin: 0px 5px;
+    width: 100px;
+}
+.checkout-form {
+    width: 100%;
+    height: 400px;
+    margin: 20px 0px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fff;
+    font-size: 16px;
+    ms-box-shadow: 0 -1px rgba(0, 0, 0, 0.2) inset;
+    -webkit-box-shadow: 0 -1px rgba(0, 0, 0, 0.2) inset;
+    padding: 15px;
 }

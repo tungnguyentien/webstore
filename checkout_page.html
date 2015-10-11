@@ -24,23 +24,24 @@
                             <div class="nav">
                                 <div class="left_top_header col-md-5"></div>
                                 <div class="center_top_header col-md-2">
+                                    <h5>Welcome to my website</h5>
                                 </div>
                                 <ul id="header_links" class="col-md-5  text-right">
                                     <li>
                                         <i class="fa fa-user"></i>
-                                        <a href="single_page.html">Tài khoản</a>
+                                        <a href="#">Account</a>
                                     </li>
                                     <li>
                                         <i class="fa fa-heart"></i>
-                                        <a href="single_page.html">My Wishlist</a>
+                                        <a href="#">My Wishlist</a>
                                     </li>
                                     <li>
                                         <i class="fa fa-cart-arrow-down"></i>
-                                        <a href="single_page.html">Giỏ hàng</a>
+                                        <a href="#">My Cart</a>
                                     </li>
                                     <li>
                                         <i class="fa fa-facebook-official"></i>
-                                        <a href="login.html">Đăng nhập</a>
+                                        <a href="#">Login</a>
                                     </li>
                                 </ul>
                             </div>
@@ -326,28 +327,62 @@
         <div id="header_mobile_menu"></div>
         <div class="columns-container"></div>
         <div class="static-home-bottom"></div>
-        <div class="container form-custom">
+        <div class="container checkout_page">
             <div class="clearfix breadcrumb">
                 <span>Trang chủ</span>
                 <i class="fa fa-angle-double-right"></i>
-                <span class="current-page">Đăng nhập</span>
+                <span class="current-page">Thanh toán</span>
             </div>
-            <div class="col-md-6 form-register">
-                <h2 class="title">Đăng ký tài khoản</h2>
-                <span>Vui lòng nhập email của bạn để đăng ký tài khoản</span>
-                <label for="email">Email address</label>
-                <input type="text">
-                <button class="button"><i class="fa fa-user-plus"></i> Tạo tài khoản</button>
+            <div class="customer-information">
+                <div class="col-md-6">
+                    <h3 class="block-title">Thông tin cá nhân</h3>
+                    <label for="">Họ và tên: </label> <span class="info">Nguyễn Tiến Tùng</span>
+                    <br>
+                    <label for="">Địa chỉ email: </label> <span class="info">tungnguyentien@gmail.com</span>
+                    <br>
+                    <label for="">Điện thoại liện hệ: </label> <span class="info">01674643756</span>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="block-title">Thông tinh giao hàng</h3>
+                    <label for="">Địa chỉ nhận hàng: </label>
+                    <input type="text" class="address">
+                    <br>
+                    <label for="">Thời gian nhận hàng: </label>
+                    <input type="date">
+                    <br>
+                    <label for="">Hình thức thanh toán: </label>
+                    <input type="radio" name="online" id="">
+                    <label for="man" class="type-of-pay">Online</label>
+                    <input type="radio" name="online" id="">
+                    <label for="woman" class="type-of-pay">Khi nhận hàng</label>
+                </div>
             </div>
-            <div class="col-md-6 form-login">
-                <h2 class="title">Đăng nhập</h2>
-                <span>Vui lòng nhập email của bạn để đăng ký tài khoản</span>
-                <label for="email">Email address</label>
-                <input type="text">
-                <label for="email">Password</label>
-                <input type="text">
-                <a href="#">Quên mật khẩu ?</a>
-                <button class="button"><i class="fa fa-lock"></i> Tạo tài khoản</button>
+            <div class="checkout-form">
+                <h3 class="block-title">Thông tin giỏ hàng</h3>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Sản phẩm</th>
+                            <th>Thông tin mô tả</th>
+                            <th>Tình trạng</th>
+                            <th>Giá đơn chiếc</th>
+                            <th>Số lượng</th>
+                            <th>Tổng giá</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Màn hình: </td>
+                            <td>Full HD, 5.0", 1080 x 1920 pixels</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Camera sau:</td>
+                            <td>16 MP, Quay phim FullHD 1080p@30fps</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
         <div id="footer">
