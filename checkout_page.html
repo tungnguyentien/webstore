@@ -454,7 +454,7 @@
                 totalMoney += totalPrice;
                 price = formatMoney(price);
                 totalPrice = formatMoney(totalPrice);
-                htmlString += '<tr>' + '<td class="product-image"><img src="' + value.image + '" alt=""></td>' + '<td> <a href="" class="product-name">' + value.name + '</a>' + '<span>Mã SP: ' + value.id + '</span>' + '<span>Màu: Đen</span>' + '</td>' + '<td><span class="status"><i class="fa fa-check-square-o"></i></span></td>' + '<td><span class="price">' + price + '</span></td>' + '<td class="number-products">' + '<span class="minus"><i class="fa fa-minus"></i></span>' + '<input type="text" class="number-product" value="' + value.quantity + '" id="numberOfProducts">' + '<span class="add"><i class="fa fa-plus"></i></span></td>' + '<td><span class="price">' + totalPrice + '</span></td>' + '<td><span class="button-remove">Xóa</span></td>' + '</tr>';
+                htmlString += '<tr>' + '<td class="product-image"><img src="' + value.image + '" alt=""></td>' + '<td> <a href="single_page.html" class="product-name">' + value.name + '</a>' + '<span>Mã SP: ' + value.id + '</span>' + '<span>Màu: Đen</span>' + '</td>' + '<td><span class="status"><i class="fa fa-check-square-o"></i></span></td>' + '<td><span class="price">' + price + '</span></td>' + '<td class="number-products">' + '<span class="minus"><i class="fa fa-minus"></i></span>' + '<input type="text" class="number-product" value="' + value.quantity + '" id="numberOfProducts">' + '<span class="add"><i class="fa fa-plus"></i></span></td>' + '<td><span class="price">' + totalPrice + '</span></td>' + '<td><span class="button-remove">Xóa</span></td>' + '</tr>';
 
                 $('.table-product > tbody:last').append(htmlString);
 

@@ -99,7 +99,8 @@ $(document).ready(function() {
         console.log(shoppingCartItems);
         sessionStorage["shopping-cart-items"] = JSON.stringify(shoppingCartItems);
     }
-    // $('.number-product').change(function(){
-    //     console.log($(this));
-    // })
+    // $('.color-selected').change(function(){
+    //     console.log(".....");
+    //     var name = $(this).parent().siblings('.product-name').text();
+    // });
 });
