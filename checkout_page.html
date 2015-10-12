@@ -405,6 +405,7 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/XMLWriter-1.0.0.js"></script>
     <script>
     $(document).ready(function() {
         displayShoppingCartItems();
@@ -454,7 +455,7 @@
                 totalMoney += totalPrice;
                 price = formatMoney(price);
                 totalPrice = formatMoney(totalPrice);
-                htmlString += '<tr>' + '<td class="product-image"><img src="' + value.image + '" alt=""></td>' + '<td> <a href="single_page.html" class="product-name">' + value.name + '</a>' + '<span>Mã SP: ' + value.id + '</span>' + '<span>Màu: Đen</span>' + '</td>' + '<td><span class="status"><i class="fa fa-check-square-o"></i></span></td>' + '<td><span class="price">' + price + '</span></td>' + '<td class="number-products">' + '<span class="minus"><i class="fa fa-minus"></i></span>' + '<input type="text" class="number-product" value="' + value.quantity + '" id="numberOfProducts">' + '<span class="add"><i class="fa fa-plus"></i></span></td>' + '<td><span class="price">' + totalPrice + '</span></td>' + '<td><span class="button-remove">Xóa</span></td>' + '</tr>';
+                htmlString += '<tr>' + '<td class="product-image"><img src="' + value.image + '" alt=""></td>' + '<td> <a href="single_page.html" class="product-name">' + value.name + '</a>' + '<span>Mã SP: ' + value.id + '</span>' + '<span>Màu: ' + value.color + '</span>' + '</td>' + '<td><span class="status"><i class="fa fa-check-square-o"></i></span></td>' + '<td><span class="price">' + price + '</span></td>' + '<td class="number-products">' + '<span class="minus"><i class="fa fa-minus"></i></span>' + '<input type="text" class="number-product" value="' + value.quantity + '" id="numberOfProducts">' + '<span class="add"><i class="fa fa-plus"></i></span></td>' + '<td><span class="price">' + totalPrice + '</span></td>' + '<td><span class="button-remove">Xóa</span></td>' + '</tr>';
 
                 $('.table-product > tbody:last').append(htmlString);
 
@@ -482,7 +483,33 @@
         $('.button-remove').click(function() {
             var name = $(this).parent().siblings().find('.product-name').text();
             removeItem(name);
+        });
+        $('.button-checkout').click(function(){
+            saveData();
         })
+    }
+
+    function saveData() {
+        var xml = new XMLWriter('UTF-8', '1.0');
+        xml.writeStartDocument(true);
+        xml.writeStartElement('Cart');
+            xml.writeStartElement('Customer')
+                xml.writeElementString('Name','Mr. Tung');
+                xml.writeElementString('Email','tungnguyentien.cs@gmail.com');
+                xml.writeElementString('Phone','01674643756');
+            xml.writeEndElement('Customer');
+            $.each(shoppingCartItems,function(index,value){
+                xml.writeStartElement('Product');
+                    xml.writeElementString('Id',value.id.toString());
+                    xml.writeElementString('Name',value.name);
+                    xml.writeElementString('Color',value.color);
+                    xml.writeElementString('Number',value.quantity.toString());
+                    xml.writeElementString('Price',value.price);
+                  xml.writeEndElement('Product');
+            });
+        xml.writeEndElement('Cart')    
+        xml.writeEndDocument();
+        console.log(xml.flush());
     }
     </script>
 </body>

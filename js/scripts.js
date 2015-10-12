@@ -14,7 +14,9 @@ $(document).ready(function() {
         $(this).attr('value', 'Search...');
         $('.button-search').removeClass('active');
     });
-
+    $('.add-to-compare').click(function(){
+        window.location.replace('compare_page.html');
+    });
     // Add item to cart
     $('.add-to-cart').click(function() {
         var height = $('body').height();
@@ -34,9 +36,9 @@ $(document).ready(function() {
             name: name,
             price: price,
             quantity: 1,
+            color: 'Đen',
             image: src
         };
-        console.log(item);
         var quantity;
         var exitsts = false;
         if (shoppingCartItems.length > 0) {
@@ -96,11 +98,21 @@ $(document).ready(function() {
                 value.quantity = number;
             };
         });
-        console.log(shoppingCartItems);
+        sessionStorage["shopping-cart-items"] = JSON.stringify(shoppingCartItems);
+    };
+
+    function updateColor(name, color) {
+        $.each(shoppingCartItems, function(index, value) {
+            if (value.name == name) {
+                value.color = color;
+            };
+        });
         sessionStorage["shopping-cart-items"] = JSON.stringify(shoppingCartItems);
     }
-    // $('.color-selected').change(function(){
-    //     console.log(".....");
-    //     var name = $(this).parent().siblings('.product-name').text();
-    // });
+    $('.color-selected').change(function() {
+        var name = $(this).parent().siblings('.product-name').text();
+        var color = $(this).find('option:selected').text();
+        updateColor(name, color);
+        saveData();
+    });
 });
