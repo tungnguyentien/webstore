@@ -14,7 +14,7 @@ $(document).ready(function() {
         $(this).attr('value', 'Search...');
         $('.button-search').removeClass('active');
     });
-    $('.add-to-compare').click(function(){
+    $('.add-to-compare').click(function() {
         window.location.replace('compare_page.html');
     });
     // Add item to cart
@@ -85,6 +85,9 @@ $(document).ready(function() {
     });
 
     $('.btn-checkout').click(function() {
+        window.location.replace('checkout_page.html');
+    });
+    $('.icon-checkout').click(function() {
         window.location.replace('checkout_page.html');
     });
     $('.btn-continue').click(function() {

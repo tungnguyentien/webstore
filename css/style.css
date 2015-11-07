@@ -369,6 +369,7 @@ body {
     border-width: 0 0 1px;
     border-style: solid;
     border-color: #fff;
+    box-shadow: 0 -1px rgba(0, 0, 0, 0.2) inset;
     ms-box-shadow: 0 -1px rgba(0, 0, 0, 0.2) inset;
     -webkit-box-shadow: 0 -1px rgba(0, 0, 0, 0.2) inset;
     color: #333;
@@ -1823,4 +1824,12 @@ body {
 }
 .checkout-form table td span.button-checkout:hover {
     background-color: orange;
+}
+
+/*Edit profile page*/
+.edit_profile {
+
+}
+.profile {
+    
 }
