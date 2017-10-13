@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Empty JS for your own code to be here
 $(document).ready(function() {
     var shoppingCartItems = [];
@@ -119,3 +120,6 @@ $(document).ready(function() {
         saveData();
     });
 });
+=======
+// Empty JS for your own code to be here
+>>>>>>> a5b67b736fc6935ed8665cf56348dc82ad984437
